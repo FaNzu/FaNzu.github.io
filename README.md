@@ -1,4 +1,4 @@
-# CTF Writeups
+# FaNzu's 
 
 Welcome to my CTF writeup collection! Here you'll find detailed writeups for various CTFs I've participated in.
 
