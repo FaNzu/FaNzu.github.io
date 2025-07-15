@@ -7,20 +7,20 @@ I competed as part of [Brunnerne](https://brunnerne.dk) :D
 ## Challenges by Category
 
 ### OSINT
-- [sunny_day.md](sunny_day.md) ✔️
-- [Mountain View](mountain_view.md) ✔️
-- [Lost Locomotives](lost_locomotives.md) ✔️
-- [Grain of Truth](grain_of_truth.md) ✔️
-- [Elephant Enclosure](elephant_enclosure.md) ✔️
-- [fidget_spinner.md](fidget_spinner.md)
-- [no_fly_zone.md](no_fly_zone.md)
-- [government_spy.md](government_spy.md)
+- [sunny_day.md](OSINT/sunny_day.md) ✔️
+- [mountain_view.md](OSINT/mountain_view.md) ✔️
+- [lost_locomotives.md](OSINT/lost_locomotives.md) ✔️
+- [grain_of_truth.md](OSINT/grain_of_truth.md) ✔️
+- [elephant_enclosure.md](OSINT/elephant_enclosure.md) ✔️
+- [fidget_spinner.md](OSINT/fidget_spinner.md)
+- [no_fly_zone.md](OSINT/no_fly_zone.md)
+- [government_spy.md](OSINT/government_spy.md)
 
 ### Forensics
-- [L3ak Advanced Defenders](l3ak_advanced_defenders.md) ✔️ 
-- [BOMbardino crocodile](bombardino_crocodile.md) ✔️
-- [Wi-Fight A Ghost?](wi_fight_a_ghost.md) ✔️
-- [Ghost In The Dark](ghost_in_the_dark.md) ✔️
+- [l3ak_advanced_defenders.md](FORENSICS/l3ak_advanced_defenders.md) ✔️ 
+- [bombardino_crocodile.md](FORENSICS/bombardino_crocodile.md) ✔️
+- [wi_fight_a_ghost.md](FORENSICS/wi_fight_a_ghost.md) ✔️
+- [ghost_in_the_dark.md](FORENSICS/ghost_in_the_dark.md) ✔️
 
 ### Misc
 - [Feedback](feedback.md

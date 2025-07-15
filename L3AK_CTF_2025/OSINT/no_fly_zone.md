@@ -59,7 +59,7 @@ We made a script( [filter-street-data-to-geojson.py](scripts/filter-street-data-
 
 With the 2 data sets, we took the points withing a certain radius. And combined them into 1 set of gpx cords we could sort through.  
 
-
+This resulted in a more limited set of locations to visit, but we were still unable to find the place. It turned out our technic would have worked, if we had more time to go through more data. But this is the first time trying something like this, and with something like all airports in us was probably quite the first challange for something like this. But it has given us an new tool to use in the future of osint challanges.
 
 [Place]()
 
