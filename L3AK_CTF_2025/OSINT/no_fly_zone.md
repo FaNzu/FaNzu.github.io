@@ -1,15 +1,39 @@
-﻿# No Fly Zone(OSINT) - L3AK CTF 2025
+﻿# ✈️ No Fly Zone(OSINT) - L3AK CTF 2025
 
 [← Back to L3AK CTF 2025](ctf-l3ak-2025.md)
 
-We were never able to find this place, but we spend a lot of time on this. So this will be a compilation of the information we were able to find on this. Also, this challenge got us creating some pretty cool tools that could prove useful for future challenges.
+Category: OSINT
 
-The vehicle next to the hangar is used for refueling airplanes, so we were pretty confident this would be a small airstrip. 
-And due to the hangers looking something straight out of an american action movie. We started out thinking this was in the midwest of the US. 
-Using a tool called [overpass-turbo](https://overpass-turbo.eu/) which always you to compile scripts into files containing coordinates or gpx data. 
-This data can be viewed on [gpx studio](https://gpx.studio/). This is important as this was our plan to get right location. 
+Points: 0 (unsolved during CTF)
 
-In the background, we have a radar tower but no control tower in sight. So we created this overpass turbo script to sort with these parameters.
+Author: Suvoni, 0x157
+
+![screenprint_14.png](../assets/screenprint_14.png)
+
+## Summary
+
+This challenge featured an airfield with a hangar and refueling truck. We weren't able to find the exact location before the CTF ended, but we developed some powerful tooling and a methodology that could prove invaluable in future challenges.
+
+## Investigation
+
+From the provided image, we observed:
+
+    A refueling vehicle parked next to a hangar
+
+    A radar tower in the background, but no visible control tower
+
+    Architecture and surroundings reminiscent of small U.S. airstrips, likely in the Midwest
+
+Based on this, we assumed the target was a public-use aerodrome without a control tower.
+### Overpass Turbo Scripting
+
+We crafted a custom query for [overpass-turbo](https://overpass-turbo.eu/) to filter for:
+
+    Aerodromes with public access
+
+    Runways nearby
+
+    No nearby control tower
 
 ```
 [out:json][timeout:25];
@@ -49,20 +73,30 @@ out body;
 out skel qt;
 ```
 
-this gives the following output in overpass-turbo, just alone in this small area we already have 43 entries. 
+This query alone yielded 43 hits in just one small region.
 
-![screenprint_09.png](assets/screenprint_09.png)
+### Street View Data Filtering
 
-We also found a [website](https://geo.emily.bz/coverage-dates) containing information on when the goggle street car had been in specific areas. This allowed us to use the date on the google street picture and the coord of airports. and take all airports which the google street has been close to and output that. Which would heavily limit what we had to search through.
+We also used the website [geo.emily.bz](https://geo.emily.bz/coverage-dates) to identify where and when Google Street View had passed near U.S. airports. This let us:
 
-We made a script( [filter-street-data-to-geojson.py](scripts/filter-street-data-to-geojson.py) ) to convert this streetview data into something we could use. 
+    Filter airports with recent Street View coverage
 
-With the 2 data sets, we took the points withing a certain radius. And combined them into 1 set of gpx cords we could sort through.  
+    Cross-check the photo's timestamp with available Street View imagery
 
-This resulted in a more limited set of locations to visit, but we were still unable to find the place. It turned out our technic would have worked, if we had more time to go through more data. But this is the first time trying something like this, and with something like all airports in us was probably quite the first challange for something like this. But it has given us an new tool to use in the future of osint challanges.
+To process this data, we wrote a script:
+📁 [filter-airports-by-streetview.py](../scripts/filter-airports-by-streetview.py)
 
-[Place]()
+We then merged this filtered dataset with the Overpass Turbo output and visualized the results using [gpx studio](https://gpx.studio/), allowing us to browse through a smaller, more relevant set of candidate locations.
+Outcome
 
-Coords: ``
+Despite narrowing the search area significantly, we ran out of time before locating the exact match. That said, we now have a solid workflow for future airfield-related OSINT challenges.
 
-Flag: `404 Not Found`
+📍 [View on Google Maps]()
+
+Coordinates:
+
+    not found
+
+## ✅ Final Flag
+
+    not found
