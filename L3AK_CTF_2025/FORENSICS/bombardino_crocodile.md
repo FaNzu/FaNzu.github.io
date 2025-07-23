@@ -60,5 +60,3 @@ Part 1:
 ## ✅ Final Flag
 
 L3AK{Br40d0_st34L3r_0r_br41nr0t}
-
-Let me know if you want this in Markdown, or need help formatting for your specific CTF platform (e.g. HackMD, GitBook, Markdown PDF etc).
