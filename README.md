@@ -1,5 +1,7 @@
 # FaNzu's 
 
+Welcome to my small website where i collect cool stuff i am working on. Until i can make a proper website :D.
+
 # Game's
 
 - [The Wolf at the land end](The_Wolf_where_the_land_ends/Overview.md)
