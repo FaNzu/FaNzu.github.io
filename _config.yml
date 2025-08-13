@@ -1,5 +1,9 @@
 title: FaNzu's homepage
+
+subtitle: "Small website for showcasing projects, until i get a real website."
 description: Bookmark this to keep an eye on my project updates!
+authors: "FaNzu"
+
 theme: jekyll-theme-minimal
 plugins:
   - jekyll-relative-links
@@ -15,3 +19,5 @@ include:
   - CONTRIBUTING.md
   - ISSUE_TEMPLATE.md
   - PULL_REQUEST_TEMPLATE.md
+
+# example config https://github.com/twbs/bootstrap/blob/main/config.yml
