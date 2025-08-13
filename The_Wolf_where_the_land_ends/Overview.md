@@ -15,4 +15,6 @@ _picture?_
 
 ## Follow the game here
 
+_Itch io link?_
+
 _no where yet :c_
