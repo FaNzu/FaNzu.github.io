@@ -2,9 +2,9 @@
 
 Welcome to my small website where i collect cool stuff i am working on. Until i can make a proper website :D.
 
-# Game's
+# Games
 
-- [The Wolf at the land end](The_Wolf_where_the_land_ends/Overview.md)
+- [Keeper of the Rock](Keeper_of_the_Rock/Overview.md) - A 1970s narrative survival adventure at Wolf Rock Lighthouse
 
 # CTF's
 Welcome to my CTF writeup collection! Here you'll find detailed writeup for various CTFs I've participated in.
